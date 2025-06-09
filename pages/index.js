@@ -35,40 +35,42 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
-        <section className="min-h-screen snap-start flex flex-col md:flex-row items-center justify-center gap-12 px-6 pb-24 bg-gradient-to-r from-[#8054FF] to-[#A259FF] text-center overflow-hidden">
-          <div className="flex-1 text-center text-white space-y-4">
-            <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
-              AI-Powered Flutter Development
-            </span>
-            <h1 className="text-4xl sm:text-5xl font-extrabold">
-              Launch Your App with AI-Powered Flutter Templates
-            </h1>
-            <p className="text-lg max-w-xl mx-auto md:mx-0">
-              Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-              <a
-                href="#"
-                className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-600 hover:bg-purple-50"
-              >
-                Get Started
-              </a>
-              <a
-                href="#how-it-works"
-                className="px-6 py-2 text-sm font-semibold border border-white text-white rounded-lg hover:bg-white/10"
-              >
-                Learn More
-              </a>
+        <section className="min-h-screen flex items-center px-6 bg-gradient-to-r from-[#8054FF] to-[#A259FF]">
+          <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-12">
+            <div className="text-white space-y-4 text-center md:text-left flex-1">
+              <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
+                AI-Powered Flutter Development
+              </span>
+              <h1 className="text-4xl sm:text-5xl font-extrabold">
+                Launch Your App with AI-Powered Flutter Templates
+              </h1>
+              <p className="text-lg max-w-xl mx-auto md:mx-0">
+                Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
+              </p>
+              <div className="flex flex-col md:flex-row gap-4 mt-6">
+                <a
+                  href="#"
+                  className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-600 hover:bg-purple-50"
+                >
+                  Get Started<span className="ml-2">→</span>
+                </a>
+                <a
+                  href="#how-it-works"
+                  className="px-6 py-2 text-sm font-semibold border border-white text-white rounded-lg hover:bg-white/10"
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="flex-1 mt-8 md:mt-0">
-            <Image
-              src="/images/hero.png"
-              alt="Laptop with phone"
-              width={400}
-              height={200}
-              className="rounded-lg shadow-lg w-full h-auto object-contain"
-            />
+            <div className="flex-1 mt-8 md:mt-0 overflow-hidden">
+              <Image
+                src="/images/hero.png"
+                alt="Laptop with phone"
+                width={400}
+                height={200}
+                className="max-w-full h-auto object-contain"
+              />
+            </div>
           </div>
         </section>
 
