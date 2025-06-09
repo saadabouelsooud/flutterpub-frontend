@@ -35,11 +35,11 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="scroll-smooth">
-        <section className="min-h-screen flex items-center px-6 bg-[#6466f1]">
+        <section className="min-h-screen flex items-center px-4 bg-gradient-to-br from-[#6666f2] to-[#885df5]">
           <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-12">
             <div className="text-white space-y-4 text-center md:text-left flex-1">
-              <span className="inline-flex items-center text-xs font-semibold text-white bg-[#8e82f6] px-4 py-1 rounded-full w-max">
-                <span className="mr-2 text-sm">⭐</span>
+              <span className="inline-flex items-center text-xs font-semibold text-white bg-gradient-to-r from-[#6666f2]/80 to-[#885df5]/80 px-4 py-1 rounded-full w-max">
+                <span className="mr-2 text-sm">☆</span>
                 AI-Powered Flutter Development
               </span>
               <h1 className="text-4xl sm:text-5xl font-extrabold">
@@ -53,29 +53,29 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-4 mt-6">
                 <a
                   href="#"
-                  className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-[#6466f1] hover:bg-purple-50"
+                  className="px-12 py-4 text-sm font-semibold rounded-lg bg-white text-[#6466f2] hover:bg-purple-50"
                 >
-                  Get Started<span className="ml-2">→</span>
+                  Start with your idea<span className="ml-2">→</span>
                 </a>
                 <a
                   href="#how-it-works"
                   className="px-8 py-2 text-sm font-semibold text-white rounded-lg hover:bg-white/10"
                 >
-                  See how it works.
+                  See how it works
                 </a>
               </div>
             </div>
-            <div className="flex-1 mt-8 md:mt-0 overflow-hidden relative border border-[#9380f7] rounded-lg">
+            <div className="flex-1 mt-8 md:mt-0 overflow-hidden relative border-2 border-[#9380f7] rounded-lg">
               <Image
                 src="/images/hero.png"
                 alt="Laptop with phone"
                 width={400}
                 height={200}
-                className="max-w-full h-auto object-contain"
+                className="w-full h-full object-cover"
               />
-              <span className="w-3 h-3 bg-[#6a60ea] rounded-full absolute top-1 left-1" />
-              <span className="w-3 h-3 bg-[#6a60ea] rounded-full absolute top-1 right-1" />
-              <span className="w-3 h-3 bg-[#6a60ea] rounded-full absolute bottom-1 left-1" />
+              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-1" />
+              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-5" />
+              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-9" />
             </div>
           </div>
         </section>
