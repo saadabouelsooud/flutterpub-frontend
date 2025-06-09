@@ -46,7 +46,7 @@ export default function Home() {
             <p className="text-lg max-w-xl mx-auto md:mx-0">
               Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+            <div className="flex flex-col md:flex-row gap-4 mt-6">
               <a
                 href="#"
                 className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-600 hover:bg-purple-50"
@@ -79,7 +79,7 @@ export default function Home() {
             <p className="text-gray-600">
               Harness AI-powered templates to kickstart development and focus on building amazing features.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <div className="flex flex-col md:flex-row gap-4 mt-6">
               <a href="#" className="px-6 py-2 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700">
                 Get Started
               </a>
