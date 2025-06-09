@@ -1,13 +1,16 @@
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen p-6 bg-gradient-to-br from-purple-50 to-purple-200">
+    <>
       <Head>
         <title>FlutterPup</title>
       </Head>
-      <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
-        <div className="flex-1 text-center md:text-left">
+      <Navbar />
+      <div className="flex items-center justify-center min-h-screen p-6 bg-gradient-to-br from-purple-50 to-purple-200">
+        <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex-1 text-center md:text-left">
           <span className="inline-block text-xs font-semibold bg-purple-100 text-purple-800 px-3 py-1 rounded-full">
             AI-Powered Flutter Development
           </span>
@@ -36,7 +39,8 @@ export default function Home() {
             alt="Laptop with phone"
           />
         </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 }
