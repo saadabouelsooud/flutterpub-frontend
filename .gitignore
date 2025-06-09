@@ -1,0 +1,39 @@
+# 📁 Node & NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 📁 Build Output
+.next/
+out/
+dist/
+build/
+
+# ⚙️ System Files
+.DS_Store
+Thumbs.db
+
+# 📄 Env and Secrets
+.env
+.env.local
+.env.*.local
+
+# 🔐 Supabase (optional backups)
+supabase/migrations/
+supabase/.temp/
+
+# 🔄 Logs
+logs/
+*.log
+*.log.*
+
+# 📁 IDE Files
+.vscode/
+.idea/
+*.swp
+
+# 🚀 Deployment
+.vercel/
+.netlify/

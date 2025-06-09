@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
@@ -33,10 +35,12 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1">
-          <img
-            className="w-full h-auto rounded-lg shadow-lg"
-            src="https://images.unsplash.com/photo-1581276879432-c3affc7d328e?auto=format&fit=crop&w=800&q=80"
+          <Image
+            src="/images/hero.png"
             alt="Laptop with phone"
+            width={400}
+            height={200}
+            className="rounded-lg shadow-lg w-full h-auto"
           />
         </div>
         </section>
