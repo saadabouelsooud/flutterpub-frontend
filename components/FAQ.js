@@ -31,31 +31,41 @@ export default function FAQ() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto divide-y divide-gray-200">
-      {faqs.map((faq, index) => (
-        <div key={index} className="py-4">
-          <button
-            onClick={() => toggle(index)}
-            className="flex justify-between items-center w-full text-left"
+    <section id="faq" className="py-20 px-4 bg-white scroll-mt-20">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">
+        Frequently Asked Questions
+      </h2>
+      <div className="max-w-3xl mx-auto space-y-4">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-md p-5 transition hover:shadow-lg"
           >
-            <span className="font-medium text-gray-900">{faq.question}</span>
-            <span
-              className={`ml-4 transform transition-transform duration-300 text-xl ${
-                openIndex === index ? 'rotate-45' : ''
+            <div
+              onClick={() => toggle(index)}
+              className="flex justify-between cursor-pointer font-semibold text-lg"
+            >
+              <span>{faq.question}</span>
+              <span
+                className={`transform transition-transform duration-300 ${
+                  openIndex === index ? 'rotate-45' : ''
+                }`}
+              >
+                +
+              </span>
+            </div>
+            <div
+              className={`mt-3 transition-all duration-300 ease-in-out overflow-hidden ${
+                openIndex === index
+                  ? 'opacity-100 max-h-screen'
+                  : 'opacity-0 max-h-0'
               }`}
             >
-              +
-            </span>
-          </button>
-          <div
-            className={`overflow-hidden transition-all duration-300 ${
-              openIndex === index ? 'max-h-screen' : 'max-h-0'
-            }`}
-          >
-            <p className="mt-2 text-gray-700">{faq.answer}</p>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 }
