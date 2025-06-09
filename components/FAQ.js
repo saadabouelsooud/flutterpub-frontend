@@ -4,23 +4,23 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'What is FlutterPup?',
-      answer: 'FlutterPup helps you kickstart Flutter projects with AI-generated templates and developer assistance.'
+      answer: 'FlutterPup is an AI-powered platform that helps businesses and developers create Flutter applications faster by providing customizable templates and connecting clients with expert Flutter developers.'
     },
     {
-      question: 'How does the AI choose templates?',
-      answer: 'Our AI analyzes your project requirements to recommend templates that best fit your needs.'
+      question: 'How does the AI template selection work?',
+      answer: 'Our AI analyzes your project requirements, industry, target audience, and feature needs to suggest the most suitable Flutter templates from our library. This saves you time in researching and selecting the right starting point for your app.'
     },
     {
-      question: 'Can I customize the generated code?',
-      answer: 'Yes, all templates are fully customizable and can be extended to match your exact specifications.'
+      question: 'Do I need coding experience to use FlutterPup?',
+      answer: "No, you don't need coding experience to use our platform. Our templates and customization tools are designed to be user-friendly. However, if you need advanced features or customizations, you can connect with our expert Flutter developers."
     },
     {
-      question: 'Do you offer developer support?',
-      answer: 'Professional and Enterprise plans include support from experienced Flutter developers.'
+      question: 'Can I export the Flutter code?',
+      answer: 'Yes, all plans include the ability to export clean, well-structured Flutter code that you can use in your own development environment or hand off to your development team.'
     },
     {
-      question: 'What plans are available?',
-      answer: 'We offer Basic, Professional, and Enterprise plans so you can choose what works best for your project.'
+      question: 'How do I get started?',
+      answer: "Simply click the 'Get Started' button, create an account, and follow our guided wizard to describe your project. Our AI will suggest templates, and you can start customizing right away or connect with a developer for assistance."
     }
   ];
 
