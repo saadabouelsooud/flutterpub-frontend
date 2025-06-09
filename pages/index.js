@@ -34,9 +34,9 @@ export default function Home() {
         <title>FlutterPup</title>
       </Head>
       <Navbar />
-      <main className="scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
-        <section className="snap-start min-h-screen flex flex-col md:flex-row items-center justify-between gap-12 px-6 bg-gradient-to-r from-[#8054FF] to-[#A259FF]">
-          <div className="flex-1 text-center md:text-left text-white space-y-4">
+      <main className="scroll-smooth snap-y snap-mandatory h-screen overflow-y-scroll">
+        <section className="min-h-screen snap-start flex flex-col md:flex-row items-center justify-center gap-12 px-6 bg-gradient-to-r from-[#8054FF] to-[#A259FF] text-center">
+          <div className="flex-1 text-center text-white space-y-4">
             <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
               AI-Powered Flutter Development
             </span>
@@ -73,8 +73,8 @@ export default function Home() {
         </section>
 
         {/* AI-Powered Flutter Templates Section */}
-        <section className="snap-start min-h-screen flex flex-col justify-center items-center px-6 bg-gray-50">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
+        <section className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-gray-50">
+          <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">Build Your Flutter App Faster with AI</h2>
             <p className="text-gray-600">
               Harness AI-powered templates to kickstart development and focus on building amazing features.
@@ -94,7 +94,7 @@ export default function Home() {
         <section
           id="how-it-works"
           ref={howItWorksRef}
-          className={`snap-start min-h-screen flex flex-col justify-center px-6 bg-[#f6f8fc] transition-all duration-700 transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          className={`snap-start min-h-screen flex flex-col justify-center items-center px-6 bg-[#f6f8fc] transition-all duration-700 transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
@@ -191,7 +191,7 @@ export default function Home() {
 
         <FAQ />
 
-        <section className="snap-start min-h-screen flex flex-col justify-between">
+        <section className="min-h-screen snap-start flex flex-col justify-between items-center px-6">
           <Footer />
         </section>
       </main>
