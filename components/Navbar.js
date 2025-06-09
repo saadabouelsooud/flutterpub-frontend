@@ -14,7 +14,7 @@ export default function Navbar() {
               How It Works
             </a>
             <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">FAQ</a>
+            <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
           </div>
           <div className="flex gap-3">
             <a
