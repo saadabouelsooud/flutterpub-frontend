@@ -2,34 +2,28 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 bg-transparent backdrop-blur-md">
-      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4 gap-4 text-white">
-        <div className="flex items-center gap-2">
+    <nav className="sticky top-0 z-50 bg-white shadow-md py-4 px-8">
+      <div className="max-w-6xl mx-auto flex justify-between items-center text-gray-700">
+        <div className="flex items-center gap-2 font-bold">
           <span className="text-2xl">🚀</span>
-          <span className="font-bold">FlutterPup</span>
+          <span>FlutterPup</span>
         </div>
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <div className="flex gap-6">
-            <a href="#how-it-works" className="hover:text-purple-200">
-              How It Works
-            </a>
-            <a href="#pricing" className="hover:text-purple-200">Pricing</a>
-            <a href="#faq" className="hover:text-purple-200">FAQ</a>
-          </div>
-          <div className="flex gap-3">
-            <a
-              href="#"
-              className="px-4 py-2 rounded border border-white text-white hover:bg-white/10"
-            >
-              Login
-            </a>
-            <a
-              href="#"
-              className="px-4 py-2 rounded bg-white text-purple-700 hover:bg-purple-50"
-            >
-              Get Started
-            </a>
-          </div>
+        <div className="flex items-center gap-6">
+          <a href="#how-it-works" className="hover:text-purple-600">
+            How It Works
+          </a>
+          <a href="#pricing" className="hover:text-purple-600">
+            Pricing
+          </a>
+          <a href="#faq" className="hover:text-purple-600">
+            FAQ
+          </a>
+          <a
+            href="#"
+            className="ml-2 px-4 py-2 rounded bg-purple-600 text-white hover:bg-purple-700"
+          >
+            Get Started
+          </a>
         </div>
       </div>
     </nav>

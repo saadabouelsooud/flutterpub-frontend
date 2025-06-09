@@ -34,7 +34,7 @@ export default function Home() {
         <title>FlutterPup</title>
       </Head>
       <Navbar />
-      <main className="scroll-snap-y scroll-smooth snap-mandatory h-screen overflow-y-scroll">
+      <main className="scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
         <section className="snap-start min-h-screen flex flex-col md:flex-row items-center justify-between gap-12 px-6 bg-gradient-to-r from-[#8054FF] to-[#A259FF]">
           <div className="flex-1 text-center md:text-left text-white space-y-4">
             <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
@@ -49,15 +49,15 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <a
                 href="#"
-                className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-700 hover:bg-purple-50"
+                className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-600 hover:bg-purple-50"
               >
-                Start with your idea
+                Get Started
               </a>
               <a
                 href="#how-it-works"
-                className="text-sm font-semibold text-white underline hover:text-purple-200"
+                className="px-6 py-2 text-sm font-semibold border border-white text-white rounded-lg hover:bg-white/10"
               >
-                See how it works
+                Learn More
               </a>
             </div>
           </div>
@@ -69,6 +69,24 @@ export default function Home() {
               height={200}
               className="rounded-lg shadow-lg w-full h-auto"
             />
+          </div>
+        </section>
+
+        {/* AI-Powered Flutter Templates Section */}
+        <section className="snap-start min-h-screen flex flex-col justify-center items-center px-6 bg-gray-50">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h2 className="text-4xl font-bold text-gray-900">Build Your Flutter App Faster with AI</h2>
+            <p className="text-gray-600">
+              Harness AI-powered templates to kickstart development and focus on building amazing features.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <a href="#" className="px-6 py-2 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700">
+                Get Started
+              </a>
+              <a href="#" className="px-6 py-2 rounded-lg border border-purple-600 text-purple-600 font-semibold hover:bg-purple-50">
+                Explore Templates
+              </a>
+            </div>
           </div>
         </section>
 
