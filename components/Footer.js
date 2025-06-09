@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 px-6 md:px-20 py-12">
+    <footer className="bg-gray-900 text-gray-400 px-6 md:px-20 py-12 border-t border-gray-800">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 className="text-white font-bold text-xl mb-2">FlutterPup</h3>

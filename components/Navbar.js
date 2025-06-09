@@ -2,30 +2,30 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-50 border-b border-gray-200">
-      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4 gap-4">
+    <nav className="sticky top-0 z-50 bg-transparent backdrop-blur-md">
+      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4 gap-4 text-white">
         <div className="flex items-center gap-2">
           <span className="text-2xl">🚀</span>
-          <span className="font-bold text-gray-900">FlutterPup</span>
+          <span className="font-bold">FlutterPup</span>
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <div className="flex gap-6">
-            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900">
+            <a href="#how-it-works" className="hover:text-purple-200">
               How It Works
             </a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
-            <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
+            <a href="#pricing" className="hover:text-purple-200">Pricing</a>
+            <a href="#faq" className="hover:text-purple-200">FAQ</a>
           </div>
           <div className="flex gap-3">
             <a
               href="#"
-              className="px-4 py-2 rounded border border-purple-600 text-purple-600 hover:bg-purple-50"
+              className="px-4 py-2 rounded border border-white text-white hover:bg-white/10"
             >
               Login
             </a>
             <a
               href="#"
-              className="px-4 py-2 rounded bg-purple-600 text-white hover:bg-purple-700"
+              className="px-4 py-2 rounded bg-white text-purple-700 hover:bg-purple-50"
             >
               Get Started
             </a>

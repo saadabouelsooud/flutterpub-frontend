@@ -34,76 +34,50 @@ export default function Home() {
         <title>FlutterPup</title>
       </Head>
       <Navbar />
-      <div className="flex items-center justify-center min-h-screen p-6 bg-gradient-to-r from-purple-500 to-indigo-500">
-        <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 py-12">
-          <div className="flex-1 text-center md:text-left text-white">
-          <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
-            AI-Powered Flutter Development
-          </span>
-          <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold">
-            Launch Your App with AI-Powered Flutter Templates
-          </h1>
-          <p className="mt-4 text-lg max-w-xl mx-auto md:mx-0">
-            Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-            <a
-              href="#"
-              className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-700 hover:bg-purple-50"
-            >
-              Start with your idea
-            </a>
-            <a
-              href="#how-it-works"
-              className="px-6 py-2 text-sm font-semibold rounded-lg border border-white text-white hover:bg-white/10"
-            >
-              See how it works
-            </a>
+      <main className="scroll-snap-y scroll-smooth snap-mandatory h-screen overflow-y-scroll">
+        <section className="snap-start min-h-screen flex flex-col md:flex-row items-center justify-between gap-12 px-6 bg-gradient-to-r from-[#8054FF] to-[#A259FF]">
+          <div className="flex-1 text-center md:text-left text-white space-y-4">
+            <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
+              AI-Powered Flutter Development
+            </span>
+            <h1 className="text-4xl sm:text-5xl font-extrabold">
+              Launch Your App with AI-Powered Flutter Templates
+            </h1>
+            <p className="text-lg max-w-xl mx-auto md:mx-0">
+              Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+              <a
+                href="#"
+                className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-700 hover:bg-purple-50"
+              >
+                Start with your idea
+              </a>
+              <a
+                href="#how-it-works"
+                className="text-sm font-semibold text-white underline hover:text-purple-200"
+              >
+                See how it works
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="flex-1">
-          <Image
-            src="/images/hero.png"
-            alt="Laptop with phone"
-            width={400}
-            height={200}
-            className="rounded-lg shadow-lg w-full h-auto"
-          />
-        </div>
-        </section>
-      </div>
-      {/* New centered section under hero */}
-      <section className="bg-gradient-to-br from-purple-600 to-purple-800 py-20 flex items-center justify-center px-4 text-center">
-        <div className="max-w-3xl space-y-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">
-            Build Your Flutter App Faster with AI
-          </h2>
-          <p className="text-white/90 text-lg">
-            FlutterPup combines AI-powered templates with expert developers to help you build beautiful, high-performance Flutter applications in record time.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#"
-              className="px-8 py-3 bg-white text-purple-700 rounded-lg font-semibold shadow hover:bg-purple-50"
-            >
-              Get Started
-            </a>
-            <a
-              href="#"
-              className="px-8 py-3 border border-white text-white rounded-lg font-semibold hover:bg-white/10"
-            >
-              Learn More
-            </a>
+          <div className="flex-1 mt-8 md:mt-0">
+            <Image
+              src="/images/hero.png"
+              alt="Laptop with phone"
+              width={400}
+              height={200}
+              className="rounded-lg shadow-lg w-full h-auto"
+            />
           </div>
-        </div>
         </section>
 
-      {/* How It Works */}
-      <div
-        ref={howItWorksRef}
-        className={`transition-all duration-700 transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-      >
-      <section id="how-it-works" className="py-20 px-4 bg-white">
+        {/* How It Works */}
+        <section
+          id="how-it-works"
+          ref={howItWorksRef}
+          className={`snap-start min-h-screen flex flex-col justify-center px-6 bg-[#f6f8fc] transition-all duration-700 transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
             How It Works
@@ -126,12 +100,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      </div>
+        </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
+        {/* Pricing Section */}
+        <section id="pricing" className="snap-start min-h-screen flex flex-col justify-center px-6 bg-white">
+          <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-center text-3xl font-bold mb-4">Simple, Transparent Pricing</h2>
           <p className="text-gray-600 mb-12">Choose the plan that works best for your project needs</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -195,13 +168,15 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <FAQ />
+        <FAQ />
 
-      <Footer />
-
-      </>
+        <section className="snap-start min-h-screen flex flex-col justify-between">
+          <Footer />
+        </section>
+      </main>
+    </>
   );
 }
