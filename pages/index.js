@@ -34,7 +34,7 @@ export default function Home() {
         <title>FlutterPup</title>
       </Head>
       <Navbar />
-      <main className="scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
+      <main className="scroll-smooth">
         <section className="min-h-screen flex items-center px-6 bg-gradient-to-r from-[#8054FF] to-[#A259FF]">
           <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-12">
             <div className="text-white space-y-4 text-center md:text-left flex-1">
