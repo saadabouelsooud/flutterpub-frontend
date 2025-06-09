@@ -45,6 +45,31 @@ export default function Home() {
         </div>
         </section>
       </div>
+      {/* New centered section under hero */}
+      <section className="bg-gradient-to-br from-purple-600 to-purple-800 py-20 flex items-center justify-center px-4 text-center">
+        <div className="max-w-3xl space-y-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            Build Your Flutter App Faster with AI
+          </h2>
+          <p className="text-white/90 text-lg">
+            FlutterPup combines AI-powered templates with expert developers to help you build beautiful, high-performance Flutter applications in record time.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="#"
+              className="px-8 py-3 bg-white text-purple-700 rounded-lg font-semibold shadow hover:bg-purple-50"
+            >
+              Get Started
+            </a>
+            <a
+              href="#"
+              className="px-8 py-3 border border-white text-white rounded-lg font-semibold hover:bg-white/10"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
