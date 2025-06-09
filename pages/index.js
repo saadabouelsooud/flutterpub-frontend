@@ -34,8 +34,8 @@ export default function Home() {
         <title>FlutterPup</title>
       </Head>
       <Navbar />
-      <main className="scroll-smooth snap-y snap-mandatory h-screen overflow-y-scroll">
-        <section className="min-h-screen snap-start flex flex-col md:flex-row items-center justify-center gap-12 px-6 bg-gradient-to-r from-[#8054FF] to-[#A259FF] text-center">
+      <main className="scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
+        <section className="min-h-screen snap-start flex flex-col md:flex-row items-center justify-center gap-12 px-6 pb-24 bg-gradient-to-r from-[#8054FF] to-[#A259FF] text-center overflow-hidden">
           <div className="flex-1 text-center text-white space-y-4">
             <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
               AI-Powered Flutter Development
@@ -67,7 +67,7 @@ export default function Home() {
               alt="Laptop with phone"
               width={400}
               height={200}
-              className="rounded-lg shadow-lg w-full h-auto"
+              className="rounded-lg shadow-lg w-full h-auto object-contain"
             />
           </div>
         </section>
@@ -191,7 +191,7 @@ export default function Home() {
 
         <FAQ />
 
-        <section className="min-h-screen snap-start flex flex-col justify-between items-center px-6">
+        <section className="min-h-screen snap-start flex flex-col justify-between items-center px-6 pb-24">
           <Footer />
         </section>
       </main>
