@@ -31,7 +31,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-20 px-4 bg-white scroll-mt-20">
+    <section id="faq" className="snap-start min-h-screen flex flex-col justify-center px-6 bg-gray-50">
       <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
       <div className="max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
