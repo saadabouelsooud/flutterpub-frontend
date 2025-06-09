@@ -34,26 +34,29 @@ export default function Home() {
         <title>FlutterPup</title>
       </Head>
       <Navbar />
-      <div className="flex items-center justify-center min-h-screen p-6 bg-gradient-to-br from-purple-50 to-purple-200">
-        <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
-          <div className="flex-1 text-center md:text-left">
-          <span className="inline-block text-xs font-semibold bg-purple-100 text-purple-800 px-3 py-1 rounded-full">
+      <div className="flex items-center justify-center min-h-screen p-6 bg-gradient-to-r from-purple-500 to-indigo-500">
+        <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 py-12">
+          <div className="flex-1 text-center md:text-left text-white">
+          <span className="inline-block text-xs font-semibold bg-white/20 text-white px-3 py-1 rounded-full">
             AI-Powered Flutter Development
           </span>
-          <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold text-gray-900">
+          <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold">
             Launch Your App with AI-Powered Flutter Templates
           </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
+          <p className="mt-4 text-lg max-w-xl mx-auto md:mx-0">
             Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
             <a
               href="#"
-              className="px-8 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition font-semibold"
+              className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-700 hover:bg-purple-50"
             >
               Start with your idea
             </a>
-            <a href="#how-it-works" className="text-purple-700 font-semibold hover:underline">
+            <a
+              href="#how-it-works"
+              className="px-6 py-2 text-sm font-semibold rounded-lg border border-white text-white hover:bg-white/10"
+            >
               See how it works
             </a>
           </div>
@@ -105,33 +108,21 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
             How It Works
           </h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center justify-center text-center aspect-square">
-              <div className="text-5xl mb-4 text-purple-600">🤖</div>
-              <h3 className="text-lg font-semibold text-purple-600 mb-2">
-                AI-Powered Template Selection
-              </h3>
-              <p className="text-gray-600">
-                Our AI analyzes your requirements and suggests the perfect Flutter templates to kickstart your project...
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white shadow-md p-6 rounded-xl aspect-square h-72 flex flex-col justify-center items-center">
+              <div className="text-purple-500 w-8 h-8 mb-4 text-3xl">🤖</div>
+              <h3 className="font-bold text-lg text-center mb-2">AI-Powered Template Selection</h3>
+              <p className="text-center text-gray-600">Our AI analyzes your requirements and suggests the perfect Flutter templates to kickstart your project...</p>
             </div>
-            <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center justify-center text-center aspect-square">
-              <div className="text-5xl mb-4 text-purple-600">🎨</div>
-              <h3 className="text-lg font-semibold text-purple-600 mb-2">
-                Customization Made Easy
-              </h3>
-              <p className="text-gray-600">
-                Easily customize your Flutter app with our intuitive interface...
-              </p>
+            <div className="bg-white shadow-md p-6 rounded-xl aspect-square h-72 flex flex-col justify-center items-center">
+              <div className="text-purple-500 w-8 h-8 mb-4 text-3xl">🎨</div>
+              <h3 className="font-bold text-lg text-center mb-2">Customization Made Easy</h3>
+              <p className="text-center text-gray-600">Easily customize your Flutter app with our intuitive interface...</p>
             </div>
-            <div className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center justify-center text-center aspect-square">
-              <div className="text-5xl mb-4 text-purple-600">👥</div>
-              <h3 className="text-lg font-semibold text-purple-600 mb-2">
-                Expert Flutter Developers
-              </h3>
-              <p className="text-gray-600">
-                Connect with our network of vetted Flutter developers...
-              </p>
+            <div className="bg-white shadow-md p-6 rounded-xl aspect-square h-72 flex flex-col justify-center items-center">
+              <div className="text-purple-500 w-8 h-8 mb-4 text-3xl">👥</div>
+              <h3 className="font-bold text-lg text-center mb-2">Expert Flutter Developers</h3>
+              <p className="text-center text-gray-600">Connect with our network of vetted Flutter developers...</p>
             </div>
           </div>
         </div>
@@ -141,13 +132,9 @@ export default function Home() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Simple, Transparent Pricing
-          </h2>
-          <p className="mt-2 text-gray-600 mb-12">
-            Choose the plan that works best for your project needs
-          </p>
-          <div className="grid gap-8 md:grid-cols-3">
+          <h2 className="text-center text-3xl font-bold mb-4">Simple, Transparent Pricing</h2>
+          <p className="text-gray-600 mb-12">Choose the plan that works best for your project needs</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Basic */}
             <div className="bg-white rounded-lg shadow p-6 flex flex-col">
               <h3 className="text-lg font-semibold text-purple-600 mb-2">Basic</h3>
@@ -161,14 +148,14 @@ export default function Home() {
               </ul>
               <a
                 href="#"
-                className="mt-auto px-4 py-2 rounded bg-purple-600 text-white hover:bg-purple-700"
+                className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-purple-600 text-white hover:bg-purple-700"
               >
                 Get Started
               </a>
             </div>
 
             {/* Professional */}
-            <div className="bg-white rounded-lg shadow p-6 flex flex-col border-2 border-purple-600 relative">
+            <div className="bg-white rounded-lg shadow p-6 flex flex-col ring-2 ring-purple-500 relative">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
                 Most Popular
               </span>
@@ -183,7 +170,7 @@ export default function Home() {
               </ul>
               <a
                 href="#"
-                className="mt-auto px-4 py-2 rounded bg-purple-600 text-white hover:bg-purple-700"
+                className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-purple-600 text-white hover:bg-purple-700"
               >
                 Get Started
               </a>
@@ -202,7 +189,7 @@ export default function Home() {
               </ul>
               <a
                 href="#"
-                className="mt-auto px-4 py-2 rounded bg-purple-600 text-white hover:bg-purple-700"
+                className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-purple-600 text-white hover:bg-purple-700"
               >
                 Contact Us
               </a>

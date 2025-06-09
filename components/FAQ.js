@@ -32,33 +32,43 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="py-20 px-4 bg-white scroll-mt-20">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">
-        Frequently Asked Questions
-      </h2>
+      <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
       <div className="max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md p-5 transition hover:shadow-lg"
+            className="bg-white rounded-lg shadow p-4 space-y-2 transition hover:shadow-lg"
           >
             <div
               onClick={() => toggle(index)}
               className="flex justify-between cursor-pointer font-semibold text-lg"
             >
               <span>{faq.question}</span>
-              <span
-                className={`transform transition-transform duration-300 ${
-                  openIndex === index ? 'rotate-45' : ''
-                }`}
-              >
-                +
-              </span>
+              {openIndex === index ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 stroke-[2]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5 stroke-[2]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+              )}
             </div>
             <div
-              className={`mt-3 transition-all duration-300 ease-in-out overflow-hidden ${
-                openIndex === index
-                  ? 'opacity-100 max-h-screen'
-                  : 'opacity-0 max-h-0'
+              className={`transition-all duration-300 ease-in overflow-hidden ${
+                openIndex === index ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0'
               }`}
             >
               <p className="text-gray-600">{faq.answer}</p>
