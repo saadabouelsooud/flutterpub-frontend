@@ -210,9 +210,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="faq" className="py-20 px-4 bg-white scroll-mt-20">
-        <FAQ />
-      </section>
+      <FAQ />
 
       </>
   );
