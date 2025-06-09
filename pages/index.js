@@ -75,17 +75,23 @@ export default function Home() {
         </section>
 
         {/* AI-Powered Flutter Templates Section */}
-        <section className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-gray-50">
+        <section className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-[#EFEAFE]">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">Build Your Flutter App Faster with AI</h2>
             <p className="text-gray-600">
               Harness AI-powered templates to kickstart development and focus on building amazing features.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <a href="#" className="px-6 py-2 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700">
+              <a
+                href="#"
+                className="px-6 py-2 text-sm font-semibold rounded-lg bg-white text-purple-600 hover:bg-purple-50"
+              >
                 Get Started
               </a>
-              <a href="#" className="px-6 py-2 rounded-lg border border-purple-600 text-purple-600 font-semibold hover:bg-purple-50">
+              <a
+                href="#"
+                className="px-6 py-2 text-sm font-semibold border border-white text-white rounded-lg hover:bg-white/10"
+              >
                 Explore Templates
               </a>
             </div>
