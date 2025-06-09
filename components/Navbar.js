@@ -10,7 +10,9 @@ export default function Navbar() {
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <div className="flex gap-6">
-            <a href="#" className="text-gray-600 hover:text-gray-900">How It Works</a>
+            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900">
+              How It Works
+            </a>
             <a href="#" className="text-gray-600 hover:text-gray-900">Pricing</a>
             <a href="#" className="text-gray-600 hover:text-gray-900">FAQ</a>
           </div>

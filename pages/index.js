@@ -29,7 +29,7 @@ export default function Home() {
             >
               Start with your idea
             </a>
-            <a href="#" className="text-purple-700 font-semibold hover:underline">
+            <a href="#how-it-works" className="text-purple-700 font-semibold hover:underline">
               See how it works
             </a>
           </div>
@@ -69,7 +69,46 @@ export default function Home() {
             </a>
           </div>
         </div>
+        </section>
+
+      {/* How It Works */}
+      <section id="how-it-works" className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
+            How It Works
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="p-6 bg-white rounded-lg shadow text-center">
+              <div className="text-5xl mb-4 text-purple-600">🤖</div>
+              <h3 className="text-lg font-semibold text-purple-600 mb-2">
+                AI-Powered Template Selection
+              </h3>
+              <p className="text-gray-600">
+                Our AI analyzes your requirements and suggests the perfect Flutter templates to kickstart your project...
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow text-center">
+              <div className="text-5xl mb-4 text-purple-600">🎨</div>
+              <h3 className="text-lg font-semibold text-purple-600 mb-2">
+                Customization Made Easy
+              </h3>
+              <p className="text-gray-600">
+                Easily customize your Flutter app with our intuitive interface...
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow text-center">
+              <div className="text-5xl mb-4 text-purple-600">👥</div>
+              <h3 className="text-lg font-semibold text-purple-600 mb-2">
+                Expert Flutter Developers
+              </h3>
+              <p className="text-gray-600">
+                Connect with our network of vetted Flutter developers...
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-    </>
+
+      </>
   );
 }
