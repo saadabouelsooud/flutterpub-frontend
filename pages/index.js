@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
+import FAQ from '../components/FAQ';
 import { useEffect, useRef, useState } from 'react';
 
 
@@ -207,6 +208,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="faq" className="py-20 px-4 bg-white scroll-mt-20">
+        <FAQ />
       </section>
 
       </>
