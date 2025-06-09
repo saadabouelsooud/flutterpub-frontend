@@ -1,23 +1,41 @@
 import Head from 'next/head';
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-b from-blue-100 to-white">
+    <div className="flex items-center justify-center min-h-screen p-6 bg-gradient-to-br from-purple-50 to-purple-200">
       <Head>
         <title>FlutterPup</title>
       </Head>
-      <section className="w-full flex flex-col items-center justify-center py-24">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-4 text-center">
-          Welcome to FlutterPup Starter
-        </h1>
-        <p className="text-lg text-gray-600 mb-8 text-center max-w-xl">
-          Kickstart your next Flutter project with our modern, ready-to-use starter template. Build faster, launch sooner.
-        </p>
-        <a
-          href="#"
-          className="px-8 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold text-lg"
-        >
-          Get Started
-        </a>
+      <section className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="flex-1 text-center md:text-left">
+          <span className="inline-block text-xs font-semibold bg-purple-100 text-purple-800 px-3 py-1 rounded-full">
+            AI-Powered Flutter Development
+          </span>
+          <h1 className="mt-4 text-4xl sm:text-5xl font-extrabold text-gray-900">
+            Launch Your App with AI-Powered Flutter Templates
+          </h1>
+          <p className="mt-4 text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
+            Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+            <a
+              href="#"
+              className="px-8 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition font-semibold"
+            >
+              Start with your idea
+            </a>
+            <a href="#" className="text-purple-700 font-semibold hover:underline">
+              See how it works
+            </a>
+          </div>
+        </div>
+        <div className="flex-1">
+          <img
+            className="w-full h-auto rounded-lg shadow-lg"
+            src="https://images.unsplash.com/photo-1581276879432-c3affc7d328e?auto=format&fit=crop&w=800&q=80"
+            alt="Laptop with phone"
+          />
+        </div>
       </section>
     </div>
   );
