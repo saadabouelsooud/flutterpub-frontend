@@ -1,9 +1,31 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
 
 
 export default function Home() {
+  const howItWorksRef = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const section = howItWorksRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.unobserve(section);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <Head>
@@ -72,6 +94,10 @@ export default function Home() {
         </section>
 
       {/* How It Works */}
+      <div
+        ref={howItWorksRef}
+        className={`transition-all duration-700 transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+      >
       <section id="how-it-works" className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
@@ -108,6 +134,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </div>
 
       </>
   );
