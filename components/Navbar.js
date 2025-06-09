@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center text-gray-800">
         <div className="flex items-center gap-2 font-bold">
           <span className="text-2xl">🚀</span>
-          <span>FlutterPup</span>
+          <span className="text-2xl">FlutterPup</span>
         </div>
         <div className="flex items-center gap-6">
           <a href="#how-it-works" className="text-gray-700 hover:text-purple-600">
@@ -20,11 +20,11 @@ export default function Navbar() {
           </a>
           <a
             href="#"
-            className="border border-purple-600 text-purple-600 rounded px-4 py-2 text-sm hover:bg-purple-100"
+            className="border border-[#6466f1] text-[#6466f1] rounded-full px-4 py-2 text-sm font-bold hover:bg-purple-100"
           >
             Login
           </a>
-          <button className="bg-purple-600 text-white rounded px-4 py-2 hover:bg-purple-700 text-sm ml-4">
+          <button className="bg-[#6466f1] text-white rounded-full px-4 py-2 hover:bg-purple-700 text-sm ml-2 font-bold">
             Get Started
           </button>
         </div>
