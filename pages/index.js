@@ -35,10 +35,10 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="scroll-smooth">
-        <section className="min-h-screen flex items-center px-4 bg-gradient-to-br from-[#6666f2] to-[#885df5]">
+        <section className="min-h-screen flex items-center px-0 bg-gradient-to-br from-[#6666f2] to-[#885df5]">
           <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-12">
             <div className="text-white space-y-4 text-center md:text-left flex-1">
-              <span className="inline-flex items-center text-xs font-semibold text-white bg-gradient-to-r from-[#6666f2]/80 to-[#885df5]/80 px-4 py-1 rounded-full w-max">
+              <span className="inline-flex items-center text-xs font-semibold text-white bg-gradient-to-r from-[#8584f4] to-[#8f82f6] px-4 py-1 rounded-full w-full">
                 <span className="mr-2 text-sm">☆</span>
                 AI-Powered Flutter Development
               </span>
@@ -48,23 +48,23 @@ export default function Home() {
                 <span className="block">Flutter Templates</span>
               </h1>
               <p className="text-lg max-w-xl mx-auto md:mx-0">
-                Transform your business idea into a fully functional Flutter app with our AI-powered template recommendations, customization tools, and developer network.              </p>
+                Transform your business idea into a fully functional Flutter app with our AI-powered template recommendations, customization tools, and developer network.</p>
               <div className="flex flex-col md:flex-row gap-4 mt-6">
                 <a
                   href="#"
-                  className="px-12 py-4 text-sm font-semibold rounded-lg bg-white text-[#6466f2] hover:bg-purple-50"
+                  className="inline-flex items-center justify-center px-12 py-4 text-base font-bold rounded-lg bg-white text-[#6466f2] hover:bg-purple-50"
                 >
                   Start with your idea<span className="ml-2">→</span>
                 </a>
                 <a
                   href="#how-it-works"
-                  className="px-8 py-2 text-sm font-semibold text-white rounded-lg hover:bg-white/10"
+                  className="inline-flex items-center justify-center px-8 py-2 text-base font-bold text-white rounded-lg hover:bg-white/10"
                 >
                   See how it works
                 </a>
               </div>
             </div>
-            <div className="flex-1 mt-8 md:mt-0 overflow-hidden relative border-4 border-[#9380f7] rounded-lg">
+            <div className="flex-1 mt-6 md:mt-2 overflow-hidden relative border-4 border-[#9380f7] rounded-lg">
               <Image
                 src="/images/hero.avif"
                 alt="Laptop with phone"
@@ -72,9 +72,7 @@ export default function Home() {
                 height={200}
                 className="w-full h-full object-cover"
               />
-              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-1" />
-              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-5" />
-              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-9" />
+              <div className="absolute bottom-[-40px] right-[25%] w-[250px] h-[180px] bg-[#8054FF]/30 rounded-[60px] blur-2xl z-[-1]" />
             </div>
           </div>
         </section>
