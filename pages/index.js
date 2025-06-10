@@ -36,8 +36,8 @@ export default function Home() {
       <Navbar />
       <main className="scroll-smooth">
         <section className="min-h-screen flex items-center px-0 bg-gradient-to-br from-[#6666f2] to-[#885df5]">
-          <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-12">
-            <div className="text-white space-y-4 text-center md:text-left flex-1">
+          <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-6">
+            <div className="text-white space-y-2 text-center md:text-left flex-1">
               <span className="inline-flex items-center text-xs font-semibold text-white bg-gradient-to-r from-[#8584f4] to-[#8f82f6] px-4 py-1 rounded-full w-full">
                 <span className="mr-2 text-sm">☆</span>
                 AI-Powered Flutter Development
@@ -49,7 +49,7 @@ export default function Home() {
               </h1>
               <p className="text-lg max-w-xl mx-auto md:mx-0">
                 Transform your business idea into a fully functional Flutter app with our AI-powered template recommendations, customization tools, and developer network.</p>
-              <div className="flex flex-col md:flex-row gap-4 mt-6">
+              <div className="flex flex-col md:flex-row gap-2 mt-4">
                 <a
                   href="#"
                   className="inline-flex items-center justify-center px-12 py-4 text-base font-bold rounded-lg bg-white text-[#6466f2] hover:bg-purple-50"
@@ -64,7 +64,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex-1 mt-6 md:mt-2 overflow-hidden relative border-4 border-[#9380f7] rounded-lg">
+            <div className="flex-1 mt-4 md:mt-2 overflow-hidden relative border-4 border-[#9380f7] rounded-lg">
               <Image
                 src="/images/hero.avif"
                 alt="Laptop with phone"
