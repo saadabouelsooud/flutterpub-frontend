@@ -166,40 +166,88 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Basic */}
               <div className="bg-white rounded-lg shadow p-6 flex flex-col">
-                <h3 className="text-lg font-semibold text-purple-600 mb-2">Basic</h3>
-                <p className="text-4xl font-extrabold text-purple-600 mb-2">$499</p>
+                <h3 className="text-xl font-semibold text-black mb-2">Basic</h3>
+                <p className="text-4xl font-extrabold text-[#6466f1] mb-2">$499</p>
                 <p className="mb-4 text-gray-600">Perfect for simple apps and MVPs</p>
-                <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left">
-                  <li>5 AI-generated templates</li>
-                  <li>Basic customization</li>
-                  <li>30 days support</li>
-                  <li>Export to Flutter</li>
+                <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left text-lg">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    5 AI-generated templates
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Basic customization
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    30 days support
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Export to Flutter
+                  </li>
                 </ul>
                 <a
                   href="#"
-                  className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-purple-600 text-white hover:bg-purple-700"
+                  className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-[#6466f1] text-white hover:bg-[#6466f1]/90"
                 >
                   Get Started
                 </a>
               </div>
 
               {/* Professional */}
-              <div className="bg-white rounded-lg shadow p-6 flex flex-col ring-2 ring-purple-500 relative">
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
+              <div className="bg-white rounded-lg shadow p-6 flex flex-col ring-2 ring-[#6466f1] relative">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#6466f1] text-white text-xs font-semibold px-2 py-1 rounded-full">
                   Most Popular
                 </span>
-                <h3 className="mt-3 text-lg font-semibold text-purple-600 mb-2">Professional</h3>
-                <p className="text-4xl font-extrabold text-purple-600 mb-2">$1,499</p>
+                <h3 className="mt-3 text-xl font-semibold text-black mb-2">Professional</h3>
+                <p className="text-4xl font-extrabold text-[#6466f1] mb-2">$1,499</p>
                 <p className="mb-4 text-gray-600">For businesses with specific requirements</p>
-                <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left">
-                  <li>15 templates</li>
-                  <li>Advanced customization</li>
-                  <li>90 days support</li>
-                  <li>Developer assistance (10h)</li>
+                <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left text-lg">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    15 templates
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Advanced customization
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    90 days support
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Developer assistance (10h)
+                  </li>
                 </ul>
                 <a
                   href="#"
-                  className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-purple-600 text-white hover:bg-purple-700"
+                  className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-[#6466f1] text-white hover:bg-[#6466f1]/90"
                 >
                   Get Started
                 </a>
@@ -207,18 +255,42 @@ export default function Home() {
 
               {/* Enterprise */}
               <div className="bg-white rounded-lg shadow p-6 flex flex-col">
-                <h3 className="text-lg font-semibold text-purple-600 mb-2">Enterprise</h3>
-                <p className="text-4xl font-extrabold text-purple-600 mb-2">Custom</p>
+                <h3 className="text-xl font-semibold text-black mb-2">Enterprise</h3>
+                <p className="text-4xl font-extrabold text-[#6466f1] mb-2">Custom</p>
                 <p className="mb-4 text-gray-600">For large-scale and complex applications</p>
-                <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left">
-                  <li>Unlimited templates</li>
-                  <li>Full customization</li>
-                  <li>1-year support</li>
-                  <li>Dedicated dev team</li>
+                <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left text-lg">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Unlimited templates
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Full customization
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    1-year support
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Dedicated dev team
+                  </li>
                 </ul>
                 <a
                   href="#"
-                  className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-purple-600 text-white hover:bg-purple-700"
+                  className="mt-auto px-6 py-2 text-sm font-semibold rounded-lg bg-[#6466f1] text-white hover:bg-[#6466f1]/90"
                 >
                   Contact Us
                 </a>
