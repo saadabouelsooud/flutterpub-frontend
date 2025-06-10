@@ -112,9 +112,9 @@ export default function Home() {
               How It Works
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 aspect-square">
                 <svg
-                  className="w-8 h-8 mb-4 stroke-[#6466f1]"
+                  className="w-12 h-12 mb-4 stroke-[#6466f1]"
                   fill="none"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
@@ -128,22 +128,22 @@ export default function Home() {
                 <h3 className="font-bold text-lg mb-2">AI-Powered Template Selection</h3>
                 <p className="text-gray-600 text-lg">Our AI analyzes your requirements and suggests the perfect Flutter templates to kickstart your project...</p>
               </div>
-              <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 aspect-square">
                 <svg
-                  className="w-8 h-8 mb-4 stroke-[#6466f1]"
+                  className="w-12 h-12 mb-4 stroke-[#6466f1]"
                   fill="none"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M2 19l6-6 2 2 6-6 6 6" />
-                  <path d="M18 13v6H4v-6" />
+                  <path d="M19.5 2.5l2 2a2 2 0 010 2.8l-9 9a3 3 0 01-1.3.76l-3.7 1.03 1.03-3.7c.1-.5.3-.9.76-1.3l9-9a2 2 0 012.8 0z" />
+                  <path d="M5 18h4v4H5z" />
                 </svg>
                 <h3 className="font-bold text-lg mb-2">Customization Made Easy</h3>
                 <p className="text-gray-600 text-lg">Easily customize your Flutter app with our intuitive interface...</p>
               </div>
-              <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 aspect-square">
                 <svg
-                  className="w-8 h-8 mb-4 stroke-[#6466f1]"
+                  className="w-12 h-12 mb-4 stroke-[#6466f1]"
                   fill="none"
                   strokeWidth="2"
                   viewBox="0 0 24 24"

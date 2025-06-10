@@ -37,7 +37,9 @@ export default function Navbar() {
             >
               Login
             </a>
-            <button className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold hover:animate-pulse transition">
+            <button
+              className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
+            >
               Get Started
             </button>
           </div>
