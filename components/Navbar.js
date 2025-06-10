@@ -9,22 +9,22 @@ export default function Navbar() {
           <span className="text-2xl">FlutterPup</span>
         </div>
         <div className="flex items-center gap-6">
-          <a href="#how-it-works" className="text-gray-700 hover:text-purple-600 font-semibold">
+          <a href="#how-it-works" className="text-[#4b5563] hover:text-purple-600 font-semibold">
             How It Works
           </a>
-          <a href="#pricing" className="text-gray-700 hover:text-purple-600 font-semibold">
+          <a href="#pricing" className="text-[#4b5563] hover:text-purple-600 font-semibold">
             Pricing
           </a>
-          <a href="#faq" className="text-gray-700 hover:text-purple-600 font-semibold">
+          <a href="#faq" className="text-[#4b5563] hover:text-purple-600 font-semibold">
             FAQ
           </a>
           <a
             href="#"
-            className="border border-[#6466f1] text-[#6466f1] rounded-md px-3 py-1 text-sm font-bold hover:bg-purple-100"
+            className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-purple-100"
           >
             Login
           </a>
-          <button className="bg-[#6466f1] text-white rounded-md px-3 py-1 hover:bg-purple-700 text-sm ml-1 font-bold">
+          <button className="bg-[#6466f1] text-white rounded-md px-3 py-1 hover:bg-purple-700 text-sm font-bold">
             Get Started
           </button>
         </div>
