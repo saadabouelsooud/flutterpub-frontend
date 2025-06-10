@@ -36,7 +36,7 @@ export default function Home() {
       <Navbar />
       <main className="scroll-smooth">
         <section className="min-h-screen flex items-center px-0 bg-gradient-to-br from-[#6666f2] to-[#885df5]">
-          <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-12">
+          <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-28">
             <div className="text-white space-y-4 text-center md:text-left flex-1">
               <span className="inline-flex items-center text-xs font-semibold text-white bg-gradient-to-r from-[#8584f4] to-[#8f82f6] px-4 py-1 rounded-full w-full">
                 <span className="mr-2 text-sm">☆</span>
