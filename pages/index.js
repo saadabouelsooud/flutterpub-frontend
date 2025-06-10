@@ -126,7 +126,7 @@ export default function Home() {
                   <path d="M9 14v4h6v-4" />
                 </svg>
                 <h3 className="font-bold text-lg mb-2">AI-Powered Template Selection</h3>
-                <p className="text-gray-600 text-lg">Our AI analyzes your requirements and suggests the perfect Flutter templates to kickstart your project...</p>
+                <p className="text-gray-600 text-lg">Our AI analyzes your requirements and suggests the perfect Flutter templates to kickstart your project, saving you hours of initial setup and design decisions.</p>
               </div>
               <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 aspect-square">
                 <svg
@@ -139,7 +139,7 @@ export default function Home() {
                   <path d="M5 18h4v4H5z" />
                 </svg>
                 <h3 className="font-bold text-lg mb-2">Customization Made Easy</h3>
-                <p className="text-gray-600 text-lg">Easily customize your Flutter app with our intuitive interface...</p>
+                <p className="text-gray-600 text-lg">Easily customize your Flutter app with our intuitive interface. Change colors, layouts, and features without writing a single line of code.</p>
               </div>
               <div className="bg-white shadow-md p-6 rounded-xl flex flex-col items-start text-left transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 aspect-square">
                 <svg
@@ -152,7 +152,7 @@ export default function Home() {
                   <path d="M20 20v-2a4 4 0 00-3-3.87" />
                 </svg>
                 <h3 className="font-bold text-lg mb-2">Expert Flutter Developers</h3>
-                <p className="text-gray-600 text-lg">Connect with our network of vetted Flutter developers...</p>
+                <p className="text-gray-600 text-lg">Connect with our network of vetted Flutter developers who can help bring your vision to life, handling complex features and ensuring your app meets the highest standards.</p>
               </div>
             </div>
           </div>
