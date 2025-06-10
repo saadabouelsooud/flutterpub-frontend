@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
-import Image from 'next/image';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 import { useEffect, useRef, useState } from 'react';
 
 
@@ -35,50 +35,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="scroll-smooth">
-        <section className="min-h-screen flex items-center px-4 bg-gradient-to-br from-[#6666f2] to-[#885df5]">
-          <div className="flex flex-col md:flex-row justify-start items-start max-w-7xl mx-auto gap-12">
-            <div className="text-white space-y-4 text-center md:text-left flex-1">
-              <span className="inline-flex items-center text-xs font-semibold text-white bg-gradient-to-r from-[#6666f2]/80 to-[#885df5]/80 px-4 py-1 rounded-full w-max">
-                <span className="mr-2 text-sm">☆</span>
-                AI-Powered Flutter Development
-              </span>
-              <h1 className="text-4xl sm:text-5xl font-extrabold">
-                <span className="block">Launch Your App With</span>
-                <span className="block">AI-Power Flutter</span>
-                <span className="block">Templates</span>
-              </h1>
-              <p className="text-lg max-w-xl mx-auto md:mx-0">
-                Build production-ready Flutter apps faster using our AI-driven templates and tools. Focus on your idea while we handle the scaffolding.
-              </p>
-              <div className="flex flex-col md:flex-row gap-4 mt-6">
-                <a
-                  href="#"
-                  className="px-12 py-4 text-sm font-semibold rounded-lg bg-white text-[#6466f2] hover:bg-purple-50"
-                >
-                  Start with your idea<span className="ml-2">→</span>
-                </a>
-                <a
-                  href="#how-it-works"
-                  className="px-8 py-2 text-sm font-semibold text-white rounded-lg hover:bg-white/10"
-                >
-                  See how it works
-                </a>
-              </div>
-            </div>
-            <div className="flex-1 mt-8 md:mt-0 overflow-hidden relative border-2 border-[#9380f7] rounded-lg">
-              <Image
-                src="/images/hero.png"
-                alt="Laptop with phone"
-                width={400}
-                height={200}
-                className="w-full h-full object-cover"
-              />
-              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-1" />
-              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-5" />
-              <span className="w-3 h-3 bg-[#6a60ea] absolute -bottom-2 left-9" />
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         {/* AI-Powered Flutter Templates Section */}
         <section className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-[#EFEAFE]">
