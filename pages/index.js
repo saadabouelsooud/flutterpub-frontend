@@ -78,11 +78,11 @@ export default function Home() {
         </section>
 
         {/* AI-Powered Flutter Templates Section */}
-        <section className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-[#EFEAFE]">
+        <section className="min-h-screen snap-start flex flex-col justify-center items-center text-center px-6 bg-[#845ef5]">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-4xl font-bold text-gray-900">Build Your Flutter App Faster with AI</h2>
             <p className="text-gray-600">
-              Harness AI-powered templates to kickstart development and focus on building amazing features.
+              FlutterPup combines AI-powered templates with expert developers to help you build beautiful, high-performance Flutter applications in record time
             </p>
             <div className="flex flex-col md:flex-row gap-4 mt-6">
               <a
