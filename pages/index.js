@@ -170,29 +170,29 @@ export default function Home() {
                 <p className="text-4xl font-extrabold text-[#6466f1] mb-2">$499</p>
                 <p className="mb-4 text-gray-600">Perfect for simple apps and MVPs</p>
                 <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left text-lg">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     5 AI-generated templates
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     Basic customization
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     30 days support
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -216,29 +216,29 @@ export default function Home() {
                 <p className="text-4xl font-extrabold text-[#6466f1] mb-2">$1,499</p>
                 <p className="mb-4 text-gray-600">For businesses with specific requirements</p>
                 <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left text-lg">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     15 templates
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     Advanced customization
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     90 days support
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -259,29 +259,29 @@ export default function Home() {
                 <p className="text-4xl font-extrabold text-[#6466f1] mb-2">Custom</p>
                 <p className="mb-4 text-gray-600">For large-scale and complex applications</p>
                 <ul className="text-gray-600 flex-1 space-y-2 mb-6 text-left text-lg">
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     Unlimited templates
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     Full customization
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     1-year support
                   </li>
-                  <li className="flex items-start">
-                    <svg className="w-5 h-5 text-green-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 text-[#12b981] mr-2 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
