@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -9,24 +10,27 @@ export default function Navbar() {
           <span className="text-2xl">FlutterPup</span>
         </div>
         <div className="flex items-center gap-6">
-          <a href="#how-it-works" className="text-gray-700 hover:text-purple-600">
+          <Link href="#how-it-works" className="text-gray-700 hover:text-purple-600">
             How It Works
-          </a>
-          <a href="#pricing" className="text-gray-700 hover:text-purple-600">
+          </Link>
+          <Link href="#pricing" className="text-gray-700 hover:text-purple-600">
             Pricing
-          </a>
-          <a href="#faq" className="text-gray-700 hover:text-purple-600">
+          </Link>
+          <Link href="#faq" className="text-gray-700 hover:text-purple-600">
             FAQ
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="border border-[#6466f1] text-[#6466f1] rounded-full px-4 py-2 text-sm font-bold hover:bg-purple-100"
           >
             Login
-          </a>
-          <button className="bg-[#6466f1] text-white rounded-full px-4 py-2 hover:bg-purple-700 text-sm ml-2 font-bold">
+          </Link>
+          <Link
+            href="#"
+            className="bg-[#6466f1] text-white rounded-full px-4 py-2 hover:bg-purple-700 text-sm ml-2 font-bold"
+          >
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
