@@ -113,17 +113,57 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white shadow-md p-6 rounded-xl aspect-square h-72 flex flex-col justify-center items-center">
-                <div className="text-purple-500 w-8 h-8 mb-4 text-3xl">🤖</div>
+                <svg
+                  className="text-purple-500 w-8 h-8 mb-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.657-7.657l-1.414 1.414M6.757 17.243l-1.414 1.414m12.728 0l-1.414-1.414M6.757 6.757L5.343 5.343"
+                  />
+                </svg>
                 <h3 className="font-bold text-lg text-center mb-2">AI-Powered Template Selection</h3>
                 <p className="text-center text-gray-600">Our AI analyzes your requirements and suggests the perfect Flutter templates to kickstart your project...</p>
               </div>
               <div className="bg-white shadow-md p-6 rounded-xl aspect-square h-72 flex flex-col justify-center items-center">
-                <div className="text-purple-500 w-8 h-8 mb-4 text-3xl">🎨</div>
+                <svg
+                  className="text-purple-500 w-8 h-8 mb-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3a9 9 0 00-9 9 4 4 0 004 4h1a1 1 0 011 1v1a3 3 0 003 3 9 9 0 009-9 9 9 0 00-9-9z"
+                  />
+                  <circle cx="7" cy="10" r="1" />
+                  <circle cx="15" cy="7" r="1" />
+                  <circle cx="17" cy="12" r="1" />
+                </svg>
                 <h3 className="font-bold text-lg text-center mb-2">Customization Made Easy</h3>
                 <p className="text-center text-gray-600">Easily customize your Flutter app with our intuitive interface...</p>
               </div>
               <div className="bg-white shadow-md p-6 rounded-xl aspect-square h-72 flex flex-col justify-center items-center">
-                <div className="text-purple-500 w-8 h-8 mb-4 text-3xl">👥</div>
+                <svg
+                  className="text-purple-500 w-8 h-8 mb-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 20v-2a4 4 0 00-3-3.87M7 20v-2a4 4 0 013-3.87M12 12a4 4 0 100-8 4 4 0 000 8z"
+                  />
+                </svg>
                 <h3 className="font-bold text-lg text-center mb-2">Expert Flutter Developers</h3>
                 <p className="text-center text-gray-600">Connect with our network of vetted Flutter developers...</p>
               </div>
@@ -202,9 +242,7 @@ export default function Home() {
 
         <FAQ />
 
-        <section className="min-h-screen snap-start flex flex-col justify-between items-center px-6 pb-24">
-          <Footer />
-        </section>
+        <Footer />
       </main>
     </>
   );
