@@ -48,7 +48,7 @@ export default function Home() {
                 <span className="block">Flutter Templates</span>
               </h1>
               <p className="text-lg max-w-xl mx-auto md:mx-0">
-                Transform your business idea into a fully functional Flutter app with our AI-powered template recommendations, customization tools, and developer network.              </p>
+                Transform your business idea into a fully functional Flutter app with our AI-powered template recommendations, customization tools, and developer network.</p>
               <div className="flex flex-col md:flex-row gap-4 mt-6">
                 <a
                   href="#"
