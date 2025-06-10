@@ -165,7 +165,7 @@ export default function Home() {
             <p className="text-gray-600 mb-12">Choose the plan that works best for your project needs</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Basic */}
-              <div className="bg-white rounded-lg shadow p-6 flex flex-col">
+              <div className="bg-white rounded-lg shadow p-6 flex flex-col transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                 <h3 className="text-xl font-semibold text-black mb-2">Basic</h3>
                 <p className="text-4xl font-extrabold text-[#6466f1] mb-2">$499</p>
                 <p className="mb-4 text-gray-600">Perfect for simple apps and MVPs</p>
@@ -208,7 +208,7 @@ export default function Home() {
               </div>
 
               {/* Professional */}
-              <div className="bg-white rounded-lg shadow p-6 flex flex-col ring-2 ring-[#6466f1] relative">
+              <div className="bg-white rounded-lg shadow p-6 flex flex-col ring-2 ring-[#6466f1] relative transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#6466f1] text-white text-xs font-semibold px-2 py-1 rounded-full">
                   Most Popular
                 </span>
@@ -254,7 +254,7 @@ export default function Home() {
               </div>
 
               {/* Enterprise */}
-              <div className="bg-white rounded-lg shadow p-6 flex flex-col">
+              <div className="bg-white rounded-lg shadow p-6 flex flex-col transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                 <h3 className="text-xl font-semibold text-black mb-2">Enterprise</h3>
                 <p className="text-4xl font-extrabold text-[#6466f1] mb-2">Custom</p>
                 <p className="mb-4 text-gray-600">For large-scale and complex applications</p>
