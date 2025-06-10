@@ -33,11 +33,11 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href="#"
-              className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-purple-100"
+              className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-[#6466f1]/20 transition"
             >
               Login
             </a>
-            <button className="bg-[#6466f1] text-white rounded-md px-4 py-2 hover:bg-purple-700 text-sm font-bold">
+            <button className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold hover:animate-pulse transition">
               Get Started
             </button>
           </div>
