@@ -2,16 +2,10 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Image from 'next/image';
 import { useAuth } from '../../lib/AuthContext';
-import {
-  RocketLaunchIcon,
-  TrophyIcon,
-  BriefcaseIcon,
-  ChatBubbleOvalLeftEllipsisIcon,
-  ArrowRightOnRectangleIcon,
-} from '@heroicons/react/24/solid';
+import DeveloperSidebar from '../../components/DeveloperSidebar';
 
 export default function DeveloperDashboard() {
-  const { user, loading, signOut } = useAuth();
+  const { user, loading } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
@@ -22,54 +16,7 @@ export default function DeveloperDashboard() {
 
   return (
     <div className="flex h-screen font-sans">
-      <aside className="w-[280px] shrink-0 bg-[#7064F0] text-white flex flex-col justify-between">
-        <div>
-          <div className="flex flex-col items-center py-6">
-            <div className="w-20 h-20 rounded-full border-4 border-white overflow-hidden mb-3">
-              <Image src="/images/hero.avif" alt="Profile" width={80} height={80} className="object-cover" />
-            </div>
-            <div className="font-bold">John Developer</div>
-            <div className="text-sm opacity-80">Level 1</div>
-          </div>
-          <nav className="mt-6 px-4 space-y-1">
-            <button
-              className="flex items-center gap-3 w-full bg-white/10 rounded-md px-3 py-2 font-semibold"
-              onClick={() => router.push('/developer/dashboard')}
-            >
-              <RocketLaunchIcon className="w-5 h-5" />
-              Missions
-            </button>
-            <button
-              className="flex items-center gap-3 w-full hover:bg-white/10 rounded-md px-3 py-2"
-              onClick={() => router.push('/developer/level')}
-            >
-              <TrophyIcon className="w-5 h-5" />
-              My Level
-            </button>
-            <button
-              className="flex items-center gap-3 w-full hover:bg-white/10 rounded-md px-3 py-2"
-              onClick={() => router.push('/developer/projects')}
-            >
-              <BriefcaseIcon className="w-5 h-5" />
-              Matched Projects
-            </button>
-          </nav>
-        </div>
-        <div className="p-4 text-center">
-          <p className="text-sm mb-2">Need help with Flutter?</p>
-          <button className="w-full border border-white rounded-full px-4 py-2 flex items-center justify-center gap-2">
-            <ChatBubbleOvalLeftEllipsisIcon className="w-5 h-5" />
-            Contact Support
-          </button>
-          <button
-            onClick={signOut}
-            className="w-full mt-3 border border-white rounded-full px-4 py-2 flex items-center justify-center gap-2"
-          >
-            <ArrowRightOnRectangleIcon className="w-5 h-5" />
-            Sign Out
-          </button>
-        </div>
-      </aside>
+      <DeveloperSidebar active="dashboard" />
       <main className="flex-1 overflow-y-auto p-6 bg-gray-50">
         <h1 className="text-2xl font-bold mb-4">Learning Missions</h1>
         <div className="flex gap-3 mb-6">
