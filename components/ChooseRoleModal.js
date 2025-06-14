@@ -76,6 +76,8 @@ export default function ChooseRoleModal({ onClose }) {
     onClose && onClose(selected);
     if (selected === 'developer') {
       router.push('/developer/dashboard');
+    } else if (selected === 'businessman') {
+      router.push('/business/dashboard');
     }
   };
 

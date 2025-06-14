@@ -15,8 +15,12 @@ export default function Navbar() {
     if (!loading && user && !user.role) {
       setModal('role');
     }
-    if (!loading && user?.role === 'developer' && router.pathname === '/') {
-      router.push('/developer/dashboard');
+    if (!loading && router.pathname === '/') {
+      if (user?.role === 'developer') {
+        router.push('/developer/dashboard');
+      } else if (user?.role === 'businessman') {
+        router.push('/business/dashboard');
+      }
     }
   }, [user, loading, router]);
 
@@ -61,7 +65,13 @@ export default function Navbar() {
                 </button>
                 {user.role ? (
                   <button
-                    onClick={() => router.push('/developer/dashboard')}
+                    onClick={() =>
+                      router.push(
+                        user.role === 'developer'
+                          ? '/developer/dashboard'
+                          : '/business/dashboard'
+                      )
+                    }
                     className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
                   >
                     Dashboard

@@ -21,6 +21,8 @@ export default function LoginModal({ onClose, onForgot, onSignup }) {
       onClose && onClose();
       if (u?.role === 'developer') {
         router.push('/developer/dashboard');
+      } else if (u?.role === 'businessman') {
+        router.push('/business/dashboard');
       }
     } catch (err) {
       setError('Invalid credentials');
@@ -33,6 +35,8 @@ export default function LoginModal({ onClose, onForgot, onSignup }) {
       onClose && onClose();
       if (u?.role === 'developer') {
         router.push('/developer/dashboard');
+      } else if (u?.role === 'businessman') {
+        router.push('/business/dashboard');
       }
     } catch (err) {
       setError('Google sign in failed');
