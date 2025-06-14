@@ -133,7 +133,7 @@ export default function AIDoers() {
       </button>
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-64 shrink-0 bg-blue-500 text-white flex flex-col justify-between transform transition-transform duration-200 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} sm:translate-x-0 sm:static`}
+        className={`fixed inset-y-0 left-0 z-40 w-64 shrink-0 bg-[#7064F0] text-white flex flex-col justify-between transform transition-transform duration-200 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} sm:translate-x-0 sm:static`}
       >
         <div>
           <div className="flex items-center justify-between px-4 py-5 sm:justify-center">
@@ -156,13 +156,15 @@ export default function AIDoers() {
           <nav className="mt-6 px-4 space-y-1">
             <NavItem Icon={HomeIcon} onClick={() => router.push('/business/dashboard')}>Overview</NavItem>
             <NavItem Icon={FolderIcon} onClick={() => router.push('/business/projects')}>Projects</NavItem>
-            <NavItem active Icon={CpuChipIcon}>AI Doers</NavItem>
+            <NavItem active Icon={CpuChipIcon} onClick={() => router.push('/business/AIDoers')}>
+              AI Doers
+            </NavItem>
             <NavItem Icon={UserGroupIcon}>Developers</NavItem>
             <NavItem Icon={Cog6ToothIcon}>Settings</NavItem>
           </nav>
         </div>
         <div className="p-4 space-y-3">
-          <button className="w-full flex items-center justify-center gap-2 bg-white text-blue-500 font-semibold rounded-md py-2 hover:bg-gray-100">
+          <button className="w-full flex items-center justify-center gap-2 bg-white text-[#7064F0] font-semibold rounded-md py-2 hover:bg-gray-100">
             <PlusIcon className="w-5 h-5" />
             Start New Project
           </button>

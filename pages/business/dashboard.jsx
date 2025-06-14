@@ -120,7 +120,9 @@ export default function BusinessDashboard() {
             >
               Projects
             </NavItem>
-            <NavItem Icon={CpuChipIcon}>AI Doers</NavItem>
+            <NavItem Icon={CpuChipIcon} onClick={() => router.push('/business/AIDoers')}>
+              AI Doers
+            </NavItem>
             <NavItem Icon={UserGroupIcon}>Developers</NavItem>
             <NavItem Icon={Cog6ToothIcon}>Settings</NavItem>
           </nav>
