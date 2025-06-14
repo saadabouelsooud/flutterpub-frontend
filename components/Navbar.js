@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import LoginModal from './LoginModal';
 
 export default function Navbar() {
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
+    <>
     <nav className="sticky top-0 z-50 bg-white shadow-md px-8 py-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center text-gray-800">
         <div className="flex items-center gap-2 font-bold">
@@ -33,6 +37,10 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setShowLogin(true);
+              }}
               className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-[#6466f1]/20 transition"
             >
               Login
@@ -46,5 +54,7 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
+    {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
+    </>
   );
 }
