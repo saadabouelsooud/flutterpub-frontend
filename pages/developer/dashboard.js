@@ -80,7 +80,7 @@ export default function DeveloperDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl shadow flex flex-col">
             <div className="relative h-40">
-              <Image src="/images/hero.avif" alt="Mission" layout="fill" className="object-cover rounded-t-xl" />
+              <Image src="/images/hero.avif" alt="Mission" fill className="object-cover rounded-t-xl" />
               <div className="absolute top-2 left-2 flex gap-2">
                 <span className="bg-green-500 text-white text-xs px-2 py-1 rounded">Level 1</span>
                 <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded">Theory</span>
