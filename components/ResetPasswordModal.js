@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { supabase } from '../lib/supabaseClient';
+import { auth } from '../lib/firebaseClient';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 export default function ResetPasswordModal({ onBack, onClose }) {
   const [email, setEmail] = useState('');
@@ -15,12 +16,8 @@ export default function ResetPasswordModal({ onBack, onClose }) {
     setMessage('');
     if (!email) return;
     try {
-      const { error } = await supabase.auth.resetPasswordForEmail(email);
-      if (error) {
-        setMessage('Unable to send reset link.');
-      } else {
-        setMessage('Check your email for the reset link.');
-      }
+      await sendPasswordResetEmail(auth, email);
+      setMessage('Check your email for the reset link.');
     } catch (err) {
       setMessage('Unable to send reset link.');
     }
