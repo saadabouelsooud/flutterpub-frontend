@@ -28,9 +28,10 @@ export default function BusinessDashboard() {
     }
   }, [user, loading, router]);
 
-  const NavItem = ({ active, Icon, children }) => (
+  const NavItem = ({ active, Icon, children, ...props }) => (
     <button
       className={`flex items-center gap-3 w-full px-4 py-2 rounded-md hover:bg-white/10 ${active ? 'bg-white/20 font-semibold' : ''}`}
+      {...props}
     >
       <Icon className="w-5 h-5" />
       {children}
@@ -105,8 +106,19 @@ export default function BusinessDashboard() {
             </button>
           </div>
           <nav className="mt-6 px-4 space-y-1">
-            <NavItem active Icon={HomeIcon}>Overview</NavItem>
-            <NavItem Icon={FolderIcon}>Projects</NavItem>
+            <NavItem
+              active
+              Icon={HomeIcon}
+              onClick={() => router.push('/business/dashboard')}
+            >
+              Overview
+            </NavItem>
+            <NavItem
+              Icon={FolderIcon}
+              onClick={() => router.push('/business/projects')}
+            >
+              Projects
+            </NavItem>
             <NavItem Icon={CpuChipIcon}>AI Doers</NavItem>
             <NavItem Icon={UserGroupIcon}>Developers</NavItem>
             <NavItem Icon={Cog6ToothIcon}>Settings</NavItem>

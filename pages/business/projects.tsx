@@ -125,11 +125,12 @@ export default function Projects() {
     return matchesTab && matchesQuery;
   });
 
-  const NavItem = ({ active, Icon, children }: any) => (
+  const NavItem = ({ active, Icon, children, ...props }: any) => (
     <button
       className={`flex items-center gap-3 w-full px-4 py-2 rounded-md hover:bg-white/10 ${
         active ? 'bg-white/20 font-semibold' : ''
       }`}
+      {...props}
     >
       <Icon className="w-5 h-5" />
       {children}
@@ -178,8 +179,19 @@ export default function Projects() {
             </button>
           </div>
           <nav className="mt-6 px-4 space-y-1">
-            <NavItem Icon={HomeIcon}>Overview</NavItem>
-            <NavItem active Icon={FolderIcon}>Projects</NavItem>
+            <NavItem
+              Icon={HomeIcon}
+              onClick={() => router.push('/business/dashboard')}
+            >
+              Overview
+            </NavItem>
+            <NavItem
+              active
+              Icon={FolderIcon}
+              onClick={() => router.push('/business/projects')}
+            >
+              Projects
+            </NavItem>
             <NavItem Icon={CpuChipIcon}>AI Doers</NavItem>
             <NavItem Icon={UserGroupIcon}>Developers</NavItem>
             <NavItem Icon={Cog6ToothIcon}>Settings</NavItem>
