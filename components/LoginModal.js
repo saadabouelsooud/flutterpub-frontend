@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useAuth } from '../lib/AuthContext';
 
 export default function LoginModal({ onClose, onForgot, onSignup }) {
+  const { signIn, signInWithGoogle } = useAuth();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
   const handleBackdrop = (e) => {
     if (e.target === e.currentTarget) {
       onClose();
+    }
+  };
+
+  const handleSubmit = async () => {
+    try {
+      await signIn(email, password);
+      onClose && onClose();
+    } catch (err) {
+      setError('Invalid credentials');
+    }
+  };
+
+  const handleGoogle = async () => {
+    try {
+      await signInWithGoogle();
+      onClose && onClose();
+    } catch (err) {
+      setError('Google sign in failed');
     }
   };
 
@@ -18,14 +42,24 @@ export default function LoginModal({ onClose, onForgot, onSignup }) {
         <input
           type="email"
           placeholder="Email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-800 w-full mt-4"
         />
         <input
           type="password"
           placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
           className="rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-800 w-full mt-4"
         />
-        <button className="w-full rounded-xl bg-[#6c63ff] text-white font-semibold py-3 mt-6 hover:bg-[#5b54d6]">
+        {error && (
+          <p className="text-red-600 text-sm text-center mt-2">{error}</p>
+        )}
+        <button
+          onClick={handleSubmit}
+          className="w-full rounded-xl bg-[#6c63ff] text-white font-semibold py-3 mt-6 hover:bg-[#5b54d6]"
+        >
           Sign In
         </button>
         <div className="flex items-center gap-4 text-gray-400 text-sm mt-6 mb-4">
@@ -33,7 +67,10 @@ export default function LoginModal({ onClose, onForgot, onSignup }) {
           OR
           <hr className="flex-grow border-gray-300" />
         </div>
-        <button className="border border-gray-300 rounded-xl py-3 px-4 w-full flex items-center justify-center gap-3 font-semibold bg-white">
+        <button
+          onClick={handleGoogle}
+          className="border border-gray-300 rounded-xl py-3 px-4 w-full flex items-center justify-center gap-3 font-semibold bg-white"
+        >
           <span className="text-xl">G</span>
           Continue with Google
         </button>
