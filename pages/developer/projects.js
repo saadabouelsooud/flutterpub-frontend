@@ -67,7 +67,7 @@ export default function MatchedProjects() {
       </button>
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-[280px] shrink-0 bg-[#1A1A2E] text-white flex flex-col justify-between transform transition-transform duration-200 ${
+        className={`fixed inset-y-0 left-0 z-40 w-[280px] shrink-0 bg-[#7064F0] text-white flex flex-col justify-between transform transition-transform duration-200 ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         } sm:translate-x-0 sm:static`}
       >
