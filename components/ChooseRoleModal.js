@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import { useAuth } from '../lib/AuthContext';
 
 export default function ChooseRoleModal({ onClose }) {
   const { updateRole } = useAuth();
   const [selected, setSelected] = useState(null);
+  const router = useRouter();
 
   const roles = [
     {
@@ -72,6 +74,9 @@ export default function ChooseRoleModal({ onClose }) {
     if (!selected) return;
     await updateRole(selected);
     onClose && onClose(selected);
+    if (selected === 'developer') {
+      router.push('/developer/dashboard');
+    }
   };
 
   return (

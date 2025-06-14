@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import LoginModal from './LoginModal';
 import ResetPasswordModal from './ResetPasswordModal';
 import SignupModal from './SignupModal';
@@ -8,12 +9,16 @@ import { useAuth } from '../lib/AuthContext';
 export default function Navbar() {
   const { user, signOut, loading } = useAuth();
   const [modal, setModal] = useState(null); // 'login' | 'reset' | 'signup' | 'role'
+  const router = useRouter();
 
   useEffect(() => {
     if (!loading && user && !user.role) {
       setModal('role');
     }
-  }, [user, loading]);
+    if (!loading && user?.role === 'developer' && router.pathname === '/') {
+      router.push('/developer/dashboard');
+    }
+  }, [user, loading, router]);
 
   return (
     <>
@@ -54,12 +59,21 @@ export default function Navbar() {
                 >
                   Sign Out
                 </button>
-                <button
-                  onClick={() => setModal('role')}
-                  className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
-                >
-                  {user.role ? 'Dashboard' : 'Choose Role'}
-                </button>
+                {user.role ? (
+                  <button
+                    onClick={() => router.push('/developer/dashboard')}
+                    className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
+                  >
+                    Dashboard
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setModal('role')}
+                    className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
+                  >
+                    Choose Role
+                  </button>
+                )
               </>
             ) : (
               <>

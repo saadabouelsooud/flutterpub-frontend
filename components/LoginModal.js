@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import { useAuth } from '../lib/AuthContext';
 
 export default function LoginModal({ onClose, onForgot, onSignup }) {
   const { signIn, signInWithGoogle } = useAuth();
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -15,8 +17,11 @@ export default function LoginModal({ onClose, onForgot, onSignup }) {
 
   const handleSubmit = async () => {
     try {
-      await signIn(email, password);
+      const u = await signIn(email, password);
       onClose && onClose();
+      if (u?.role === 'developer') {
+        router.push('/developer/dashboard');
+      }
     } catch (err) {
       setError('Invalid credentials');
     }
@@ -24,8 +29,11 @@ export default function LoginModal({ onClose, onForgot, onSignup }) {
 
   const handleGoogle = async () => {
     try {
-      await signInWithGoogle();
+      const u = await signInWithGoogle();
       onClose && onClose();
+      if (u?.role === 'developer') {
+        router.push('/developer/dashboard');
+      }
     } catch (err) {
       setError('Google sign in failed');
     }
