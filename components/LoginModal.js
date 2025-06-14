@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function LoginModal({ onClose, onForgot }) {
+export default function LoginModal({ onClose, onForgot, onSignup }) {
   const handleBackdrop = (e) => {
     if (e.target === e.currentTarget) {
       onClose();
@@ -45,7 +45,14 @@ export default function LoginModal({ onClose, onForgot }) {
         </div>
         <div className="text-center mt-4 text-sm text-gray-600">
           Don't have an account?{' '}
-          <a href="#" className="text-[#6c63ff] font-bold">
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              onSignup();
+            }}
+            className="text-[#6c63ff] font-bold"
+          >
             Sign Up
           </a>
         </div>
