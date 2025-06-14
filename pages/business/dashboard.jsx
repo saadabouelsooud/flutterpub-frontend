@@ -17,6 +17,7 @@ import {
   CalendarDaysIcon,
   ArrowRightOnRectangleIcon,
 } from '@heroicons/react/24/outline';
+import StatsCards from '../../components/StatsCards';
 
 export default function BusinessDashboard() {
   const { user, loading, signOut } = useAuth();
@@ -39,12 +40,6 @@ export default function BusinessDashboard() {
     </button>
   );
 
-  const StatCard = ({ label, value }) => (
-    <div className="bg-white rounded-xl shadow-md p-5">
-      <p className="text-sm text-gray-500">{label}</p>
-      <p className="text-2xl font-bold mt-1">{value}</p>
-    </div>
-  );
 
   const RecentProjectItem = ({ title, template, status, date }) => (
     <div className="flex items-center justify-between py-3 first:pt-0 last:pb-0">
@@ -160,11 +155,8 @@ export default function BusinessDashboard() {
         </header>
         <main className="flex-1 p-6 space-y-6 bg-gray-50 overflow-y-auto">
           {/* Stats summary */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            <StatCard label="Total Projects" value="2" />
-            <StatCard label="Active Projects" value="1" />
-            <StatCard label="Completed Projects" value="0" />
-            <StatCard label="Total Spent" value="$1250" />
+          <section>
+            <StatsCards />
           </section>
 
           {/* Recent projects */}
