@@ -1,6 +1,6 @@
+'use client';
 import React, { useState } from 'react';
 import { auth } from '../lib/firebaseClient';
-import { sendPasswordResetEmail } from 'firebase/auth';
 
 export default function ResetPasswordModal({ onBack, onClose }) {
   const [email, setEmail] = useState('');
@@ -16,6 +16,7 @@ export default function ResetPasswordModal({ onBack, onClose }) {
     setMessage('');
     if (!email) return;
     try {
+      const { sendPasswordResetEmail } = await import('firebase/auth');
       await sendPasswordResetEmail(auth, email);
       setMessage('Check your email for the reset link.');
     } catch (err) {
