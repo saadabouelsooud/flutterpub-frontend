@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import LoginModal from './LoginModal';
 import ResetPasswordModal from './ResetPasswordModal';
 import SignupModal from './SignupModal';
+import ChooseRoleModal from './ChooseRoleModal';
 
 export default function Navbar() {
-  const [modal, setModal] = useState(null); // 'login' | 'reset' | 'signup'
+  const [modal, setModal] = useState(null); // 'login' | 'reset' | 'signup' | 'role'
 
   return (
     <>
@@ -48,6 +49,7 @@ export default function Navbar() {
               Login
             </a>
             <button
+              onClick={() => setModal('role')}
               className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
             >
               Get Started
@@ -74,6 +76,9 @@ export default function Navbar() {
         onClose={() => setModal(null)}
         onSignIn={() => setModal('login')}
       />
+    )}
+    {modal === 'role' && (
+      <ChooseRoleModal onClose={() => setModal(null)} />
     )}
     </>
   );
