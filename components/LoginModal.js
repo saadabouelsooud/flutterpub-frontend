@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function LoginModal({ onClose }) {
+export default function LoginModal({ onClose, onForgot }) {
   const handleBackdrop = (e) => {
     if (e.target === e.currentTarget) {
       onClose();
@@ -37,7 +37,10 @@ export default function LoginModal({ onClose }) {
           <span className="text-xl">G</span>
           Continue with Google
         </button>
-        <div className="text-[#6c63ff] text-sm text-center mt-4 underline cursor-pointer">
+        <div
+          className="text-[#6c63ff] text-sm text-center mt-4 underline cursor-pointer"
+          onClick={onForgot}
+        >
           Forgot Password?
         </div>
         <div className="text-center mt-4 text-sm text-gray-600">

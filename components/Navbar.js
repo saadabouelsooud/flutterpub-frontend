@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import LoginModal from './LoginModal';
+import ResetPasswordModal from './ResetPasswordModal';
 
 export default function Navbar() {
-  const [showLogin, setShowLogin] = useState(false);
+  const [modal, setModal] = useState(null); // 'login' | 'reset'
 
   return (
     <>
@@ -39,7 +40,7 @@ export default function Navbar() {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                setShowLogin(true);
+                setModal('login');
               }}
               className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-[#6466f1]/20 transition"
             >
@@ -54,7 +55,18 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-    {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
+    {modal === 'login' && (
+      <LoginModal
+        onClose={() => setModal(null)}
+        onForgot={() => setModal('reset')}
+      />
+    )}
+    {modal === 'reset' && (
+      <ResetPasswordModal
+        onClose={() => setModal(null)}
+        onBack={() => setModal('login')}
+      />
+    )}
     </>
   );
 }
