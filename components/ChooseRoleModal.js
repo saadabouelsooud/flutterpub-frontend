@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useAuth } from '../lib/AuthContext';
 
 export default function ChooseRoleModal({ onClose }) {
+  const { updateRole } = useAuth();
   const [selected, setSelected] = useState(null);
 
   const roles = [
@@ -66,8 +68,9 @@ export default function ChooseRoleModal({ onClose }) {
     }
   };
 
-  const handleContinue = () => {
-    console.log(selected);
+  const handleContinue = async () => {
+    if (!selected) return;
+    await updateRole(selected);
     onClose && onClose(selected);
   };
 

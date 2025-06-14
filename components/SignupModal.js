@@ -1,11 +1,13 @@
 'use client';
 import React, { useState } from 'react';
+import { useAuth } from '../lib/AuthContext';
 
-export default function SignupModal({ onClose, onSignIn }) {
+export default function SignupModal({ onClose, onSignIn, onRegistered }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
   const [error, setError] = useState('');
+  const { signUp } = useAuth();
 
   const handleBackdrop = (e) => {
     if (e.target === e.currentTarget) {
@@ -13,14 +15,20 @@ export default function SignupModal({ onClose, onSignIn }) {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== confirm) {
       setError('Passwords do not match');
       return;
     }
     setError('');
-    // handle signup logic here
+    try {
+      await signUp(email, password);
+      onClose && onClose();
+      onRegistered && onRegistered();
+    } catch (err) {
+      setError('Unable to create account');
+    }
   };
 
   return (

@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LoginModal from './LoginModal';
 import ResetPasswordModal from './ResetPasswordModal';
 import SignupModal from './SignupModal';
 import ChooseRoleModal from './ChooseRoleModal';
+import { useAuth } from '../lib/AuthContext';
 
 export default function Navbar() {
+  const { user, signOut, loading } = useAuth();
   const [modal, setModal] = useState(null); // 'login' | 'reset' | 'signup' | 'role'
+
+  useEffect(() => {
+    if (!loading && user && !user.role) {
+      setModal('role');
+    }
+  }, [user, loading]);
 
   return (
     <>
@@ -38,22 +46,41 @@ export default function Navbar() {
             FAQ
           </a>
           <div className="flex items-center gap-2">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setModal('login');
-              }}
-              className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-[#6466f1]/20 transition"
-            >
-              Login
-            </a>
-            <button
-              onClick={() => setModal('role')}
-              className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
-            >
-              Get Started
-            </button>
+            {user ? (
+              <>
+                <button
+                  onClick={signOut}
+                  className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-[#6466f1]/20 transition"
+                >
+                  Sign Out
+                </button>
+                <button
+                  onClick={() => setModal('role')}
+                  className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
+                >
+                  {user.role ? 'Dashboard' : 'Choose Role'}
+                </button>
+              </>
+            ) : (
+              <>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setModal('login');
+                  }}
+                  className="border border-[#6466f1] text-[#6466f1] rounded-md px-4 py-2 text-sm font-bold hover:bg-[#6466f1]/20 transition"
+                >
+                  Login
+                </a>
+                <button
+                  onClick={() => setModal('signup')}
+                  className="bg-[#6466f1] text-white rounded-md px-4 py-2 text-sm font-bold transition-transform duration-300 transform hover:scale-105 hover:animate-bounce"
+                >
+                  Get Started
+                </button>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -75,6 +102,7 @@ export default function Navbar() {
       <SignupModal
         onClose={() => setModal(null)}
         onSignIn={() => setModal('login')}
+        onRegistered={() => setModal('role')}
       />
     )}
     {modal === 'role' && (
