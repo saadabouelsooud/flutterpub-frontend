@@ -11,11 +11,12 @@ import {
   CheckCircleIcon,
   BoltIcon,
   ArrowRightIcon,
+  ArrowRightOnRectangleIcon,
 } from '@heroicons/react/24/solid';
 import { useAuth } from '../../lib/AuthContext';
 
 export default function MatchedProjects() {
-  const { user, loading } = useAuth();
+  const { user, loading, signOut } = useAuth();
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -95,6 +96,13 @@ export default function MatchedProjects() {
           <button className="w-full border border-white rounded-full px-4 py-2 flex items-center justify-center gap-2">
             <ChatBubbleOvalLeftEllipsisIcon className="w-5 h-5" />
             Contact Support
+          </button>
+          <button
+            onClick={signOut}
+            className="w-full mt-3 border border-white rounded-full px-4 py-2 flex items-center justify-center gap-2"
+          >
+            <ArrowRightOnRectangleIcon className="w-5 h-5" />
+            Sign Out
           </button>
         </div>
       </aside>
