@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import LoginModal from './LoginModal';
 import ResetPasswordModal from './ResetPasswordModal';
+import SignupModal from './SignupModal';
 
 export default function Navbar() {
-  const [modal, setModal] = useState(null); // 'login' | 'reset'
+  const [modal, setModal] = useState(null); // 'login' | 'reset' | 'signup'
 
   return (
     <>
@@ -59,12 +60,19 @@ export default function Navbar() {
       <LoginModal
         onClose={() => setModal(null)}
         onForgot={() => setModal('reset')}
+        onSignup={() => setModal('signup')}
       />
     )}
     {modal === 'reset' && (
       <ResetPasswordModal
         onClose={() => setModal(null)}
         onBack={() => setModal('login')}
+      />
+    )}
+    {modal === 'signup' && (
+      <SignupModal
+        onClose={() => setModal(null)}
+        onSignIn={() => setModal('login')}
       />
     )}
     </>
