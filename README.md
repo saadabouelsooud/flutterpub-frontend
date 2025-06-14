@@ -1,7 +1,7 @@
-# FlutterPup Starter with Firebase
+# FlutterPup
 
-This is a starter repo for building your FlutterPup SaaS using Next.js,
-Tailwind CSS, and Firebase.
+Starter template for building a FlutterPup SaaS using Next.js,
+Tailwind CSS and Firebase.
 
 ## Local setup
 
