@@ -36,4 +36,5 @@ available from your Firebase project's **Project settings** page under
 | `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Cloud Storage bucket name | Project settings overview | 
 | `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID` | Sender ID for Cloud Messaging | Project settings under your Web app configuration | 
 | `NEXT_PUBLIC_FIREBASE_APP_ID` | The Web app's App ID | Project settings under your Web app configuration |
+| `NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID` | Measurement ID for Google Analytics | Project settings under your Web app configuration |
 
