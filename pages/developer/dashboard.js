@@ -26,15 +26,24 @@ export default function DeveloperDashboard() {
             <div className="text-sm opacity-80">Level 1</div>
           </div>
           <nav className="mt-6 px-4 space-y-1">
-            <button className="flex items-center gap-3 w-full bg-white/10 rounded-md px-3 py-2 font-semibold">
+            <button
+              className="flex items-center gap-3 w-full bg-white/10 rounded-md px-3 py-2 font-semibold"
+              onClick={() => router.push('/developer/dashboard')}
+            >
               <RocketLaunchIcon className="w-5 h-5" />
               Missions
             </button>
-            <button className="flex items-center gap-3 w-full hover:bg-white/10 rounded-md px-3 py-2">
+            <button
+              className="flex items-center gap-3 w-full hover:bg-white/10 rounded-md px-3 py-2"
+              onClick={() => router.push('/developer/level')}
+            >
               <TrophyIcon className="w-5 h-5" />
               My Level
             </button>
-            <button className="flex items-center gap-3 w-full hover:bg-white/10 rounded-md px-3 py-2">
+            <button
+              className="flex items-center gap-3 w-full hover:bg-white/10 rounded-md px-3 py-2"
+              onClick={() => router.push('/developer/projects')}
+            >
               <BriefcaseIcon className="w-5 h-5" />
               Matched Projects
             </button>

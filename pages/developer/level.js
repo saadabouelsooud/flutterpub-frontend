@@ -73,9 +73,25 @@ export default function MyLevel() {
             <div className="text-sm opacity-80">Level 1</div>
           </div>
           <nav className="mt-6 px-4 space-y-1">
-            <NavItem Icon={RocketLaunchIcon}>Missions</NavItem>
-            <NavItem active Icon={TrophyIcon}>My Level</NavItem>
-            <NavItem Icon={BriefcaseIcon}>Matched Projects</NavItem>
+            <NavItem
+              Icon={RocketLaunchIcon}
+              onClick={() => router.push('/developer/dashboard')}
+            >
+              Missions
+            </NavItem>
+            <NavItem
+              active
+              Icon={TrophyIcon}
+              onClick={() => router.push('/developer/level')}
+            >
+              My Level
+            </NavItem>
+            <NavItem
+              Icon={BriefcaseIcon}
+              onClick={() => router.push('/developer/projects')}
+            >
+              Matched Projects
+            </NavItem>
           </nav>
         </div>
         <div className="p-4 text-center">
